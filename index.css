@@ -1,0 +1,368 @@
+html{
+    font-family: "Bai Jamjuree";
+}
+
+html p, li{
+    color: hsl(201, 11%, 66%);
+}
+
+html h1, h2, h3{
+    color: hsl(210, 10%, 33%);
+}
+main{
+
+    overflow-x: hidden;
+}
+/*-- ---------------- --> */ 
+/*<---  Hero Mobile  ---> */ 
+/*-- ---------------- --> */ 
+@media only screen and (min-width: 0rem){
+
+    #hero{
+        /* 60px */ 
+        padding: 3.75rem; 
+        text-align: center;
+        font-size: 18px;
+        background: url("images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+    }
+    #hero .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero .logo img{
+        object-fit: contain;
+        margin-bottom: 5rem;
+    }
+
+    .title{
+    margin: 0 0 1rem 0; 
+    }
+
+.text{
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    }
+
+.text:last-of-type{
+    margin-bottom: 2rem;
+    }
+
+button{
+   padding: .8rem 4rem;
+   border-radius: 30px;
+   border:none;
+   margin: 1rem auto;
+   color: white;
+    }
+
+button:hover{
+    cursor: pointer;
+}
+
+.green{
+    background-color: #4BC1AC;
+    }
+
+.purple{
+    background-color: #6073EB;
+    }
+}
+
+/*-- ---------------- --> */ 
+/*<---  Hero Desktop  ---> */ 
+/*-- ---------------- --> */ 
+/* Small Desktop - 1024px */ 
+@media only screen and (min-width: 64rem){
+
+    #hero{
+        background: url("images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+    }
+
+    #hero button{
+        margin-right: 12px;
+        padding: .8rem 2.5rem;
+    }
+
+}
+
+/*-- ---------------- --> */ 
+/*<---  Snippets Mobile  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 0rem){
+    #snippets{
+        padding: 3.75rem;
+        text-align: center;
+    }
+    
+    #snippets p{
+        margin-bottom: 4rem;
+    }
+
+    #snippets .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    #snippets .flex-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    #snippets .flex-img img{
+        object-fit: contain;
+        margin: auto auto 3.75rem auto;
+        width: clamp(100px, 100%, 1000px);
+
+    }
+}
+
+/*-- ---------------- --> */ 
+/*<---  Snippets Desktop ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 64rem){
+
+    #snippets {
+        padding-right: 100px;
+    }
+    #snippets .container{
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        left: -150px;
+    }
+
+    #snippets .flex-text{
+        margin-top: 3.75rem;
+        text-align: left;
+    }
+
+    #snippets .flex-img img{
+        margin: 0 3rem 0 0;
+    }
+    
+    span:after{
+        content:"\a";
+        white-space: pre;
+    }
+   
+
+}
+
+/*-- ---------------- --> */ 
+/*<---  Clipboard Mobile  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 0rem){
+
+    #clipboard{
+        padding: 3.75rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #clipboard img{
+        margin-top: 3rem;
+    }
+
+}
+
+/*-- ---------------- --> */ 
+/*<---  Clipboard Desktop  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 64rem){
+
+}
+
+/*-- ---------------- --> */ 
+/*<---  Workflow Mobile  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-widtH: 0rem){
+    #workflow{
+        padding: 3.75rem;
+        text-align: center;
+    }
+
+    #workflow .card-group{
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #workflow .card-group .item img{
+        margin: 2rem 0 2rem 0; 
+    }
+}
+
+/*-- ---------------- --> */ 
+/*<---  Workflow Desktop  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 64rem){
+
+    #workflow{
+        position: relative;
+    }
+
+    #workflow .workflow-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #workflow .card-group{
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+
+
+}
+
+/*-- ---------------- --> */ 
+/*<---  Logos Mobile  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 0rem){
+    #logos{
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 100px;
+    }
+
+}
+
+@media only screen and (min-width: 64rem){
+    #logos{
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/*-- ------------------------- --> */ 
+/*<---  Clipboard Mac Mobile  ---> */ 
+/*-- ------------------------- --> */ 
+
+@media only screen and (min-width: 0rem){
+    #clipboard-mac{
+        /* 60px */ 
+        padding: 3.75rem; 
+        text-align: center;
+        font-size: 18px;
+    }
+
+.text:last-of-type{
+    margin-bottom: 2rem;
+    }
+}
+
+/*-- -------------------------- --> */ 
+/*<---  Clipboard Mac Desktop  ---> */ 
+/*-- -------------------------- --> */ 
+
+@media only screen and (min-width: 64rem){
+      #clipboard-mac button{
+        margin-right: 12px;
+    }
+
+
+}
+
+/*-- ---------------- --> */ 
+/*<---  Footer Mobile  ---> */ 
+/*-- ---------------- --> */ 
+
+@media only screen and (min-width: 0rem){
+
+    footer{
+        padding: 3.75rem;
+        background-color: #F5F6F8;
+    }
+
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    footer #logo{
+        display: block;
+        width: 20%;
+        margin: 0 auto 4rem auto;
+    }
+
+    footer .container{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 2rem;
+    }
+}
+
+/*-- ---------------- --> */ 
+/*<---  Footer Desktop  ---> */ 
+/*-- ---------------- --> */
+
+@media only screen and (min-width: 64rem){
+
+    footer #logo{
+        width: 5%;
+        float: left;
+        margin-right: 5rem;
+    }
+
+    footer ul{
+        display: block;
+        text-align: left;
+        width: 50%;
+        columns: 3;
+    }
+
+    footer ul li{
+        margin-bottom: 1rem;
+    }
+
+    footer ul li:hover{
+        color:#7fffd4;
+        cursor: pointer;
+    }
+
+    footer .container img:hover{
+        filter: invert(78%) sepia(55%) saturate(307%) hue-rotate(101deg) brightness(102%) contrast(104%);
+        cursor: pointer;
+    }
+
+    footer .container{
+        gap: 1.5rem;
+        float: right;
+        margin-top: -3%;
+        padding-right: 5rem;
+    }
+}
+
