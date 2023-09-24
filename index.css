@@ -188,7 +188,10 @@ button:hover{
 /*-- ---------------- --> */ 
 
 @media only screen and (min-width: 64rem){
-
+    #clipboard img{
+        width: 60%;
+        margin: auto;
+    }
 }
 
 /*-- ---------------- --> */ 
