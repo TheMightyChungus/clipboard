@@ -9,10 +9,12 @@ html p, li{
 html h1, h2, h3{
     color: hsl(210, 10%, 33%);
 }
+
 main{
 
     overflow-x: hidden;
 }
+
 /*-- ---------------- --> */ 
 /*<---  Hero Mobile  ---> */ 
 /*-- ---------------- --> */ 
@@ -301,6 +303,7 @@ button:hover{
     footer{
         padding: 3.75rem;
         background-color: #F5F6F8;
+        height: 100%;
     }
 
     footer ul{
@@ -331,6 +334,9 @@ button:hover{
 
 @media only screen and (min-width: 64rem){
 
+    footer{
+        padding-bottom: 100px;
+    }
     footer #logo{
         width: 5%;
         float: left;
